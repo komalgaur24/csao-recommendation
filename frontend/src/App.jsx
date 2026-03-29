@@ -20,25 +20,25 @@ const RESTAURANT_NAMES = {
 }
 
 const ALL_ITEMS = [
-  { item_id:"I001", name:"Biryani",              category:"main",    price:220, veg:false, img:"https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=300&q=80" },
-  { item_id:"I002", name:"Paneer Butter Masala", category:"main",    price:190, veg:true,  img:"https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=300&q=80" },
-  { item_id:"I003", name:"Dal Makhani",          category:"main",    price:160, veg:true,  img:"https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=300&q=80" },
-  { item_id:"I004", name:"Butter Chicken",       category:"main",    price:240, veg:false, img:"https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?w=300&q=80" },
-  { item_id:"I011", name:"Butter Naan",          category:"bread",   price:35,  veg:true,  img:"https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=300&q=80" },
-  { item_id:"I012", name:"Tandoori Roti",        category:"bread",   price:25,  veg:true,  img:"https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=300&q=80" },
-  { item_id:"I005", name:"Raita",                category:"addon",   price:40,  veg:true,  img:"https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=300&q=80" },
-  { item_id:"I006", name:"Salaan",               category:"addon",   price:50,  veg:true,  img:"https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=300&q=80" },
-  { item_id:"I013", name:"Papad",                category:"addon",   price:20,  veg:true,  img:"https://images.unsplash.com/photo-1606491956689-2ea866880c84?w=300&q=80" },
-  { item_id:"I009", name:"Lassi",                category:"drink",   price:60,  veg:true,  img:"https://images.unsplash.com/photo-1571091655789-405eb7a3a3a8?w=300&q=80" },
-  { item_id:"I010", name:"Coke",                 category:"drink",   price:40,  veg:true,  img:"https://images.unsplash.com/photo-1554866585-cd94860890b7?w=300&q=80" },
-  { item_id:"I007", name:"Gulab Jamun",          category:"dessert", price:60,  veg:true,  img:"https://images.unsplash.com/photo-1601303516534-bf5d05555d5f?w=300&q=80" },
-  { item_id:"I008", name:"Rasmalai",             category:"dessert", price:70,  veg:true,  img:"https://images.unsplash.com/photo-1627662168223-7df99068099a?w=300&q=80" },
-  { item_id:"I015", name:"Kheer",                category:"dessert", price:55,  veg:true,  img:"https://images.unsplash.com/photo-1571167366136-b57e07161edd?w=300&q=80" },
-  { item_id:"I014", name:"Green Salad",          category:"addon",   price:45,  veg:true,  img:"https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=300&q=80" },
+  { item_id:"I001", name:"Biryani",              category:"main",    price:220, veg:false, emoji:"🍛", grad:["#f97316","#ea580c"] },
+  { item_id:"I002", name:"Paneer Butter Masala", category:"main",    price:190, veg:true,  emoji:"🧆", grad:["#f59e0b","#d97706"] },
+  { item_id:"I003", name:"Dal Makhani",          category:"main",    price:160, veg:true,  emoji:"🫘", grad:["#dc2626","#b91c1c"] },
+  { item_id:"I004", name:"Butter Chicken",       category:"main",    price:240, veg:false, emoji:"🍗", grad:["#ea580c","#c2410c"] },
+  { item_id:"I011", name:"Butter Naan",          category:"bread",   price:35,  veg:true,  emoji:"🫓", grad:["#ca8a04","#a16207"] },
+  { item_id:"I012", name:"Tandoori Roti",        category:"bread",   price:25,  veg:true,  emoji:"🫓", grad:["#b45309","#92400e"] },
+  { item_id:"I005", name:"Raita",                category:"addon",   price:40,  veg:true,  emoji:"🥣", grad:["#0891b2","#0e7490"] },
+  { item_id:"I006", name:"Salaan",               category:"addon",   price:50,  veg:true,  emoji:"🥘", grad:["#059669","#047857"] },
+  { item_id:"I013", name:"Papad",                category:"addon",   price:20,  veg:true,  emoji:"🥙", grad:["#16a34a","#15803d"] },
+  { item_id:"I009", name:"Lassi",                category:"drink",   price:60,  veg:true,  emoji:"🥛", grad:["#7c3aed","#6d28d9"] },
+  { item_id:"I010", name:"Coke",                 category:"drink",   price:40,  veg:true,  emoji:"🥤", grad:["#dc2626","#991b1b"] },
+  { item_id:"I007", name:"Gulab Jamun",          category:"dessert", price:60,  veg:true,  emoji:"🍮", grad:["#db2777","#be185d"] },
+  { item_id:"I008", name:"Rasmalai",             category:"dessert", price:70,  veg:true,  emoji:"🍨", grad:["#9333ea","#7e22ce"] },
+  { item_id:"I015", name:"Kheer",                category:"dessert", price:55,  veg:true,  emoji:"🍚", grad:["#ec4899","#db2777"] },
+  { item_id:"I014", name:"Green Salad",          category:"addon",   price:45,  veg:true,  emoji:"🥗", grad:["#22c55e","#16a34a"] },
 ]
 
-const CATEGORY_EMOJI = { main:"🍛", addon:"🥗", bread:"🫓", drink:"🥤", dessert:"🍮", all:"✨" }
-const CATEGORY_COLOR = {
+const CATEGORY_EMOJI  = { main:"🍛", addon:"🥗", bread:"🫓", drink:"🥤", dessert:"🍮", all:"✨" }
+const CATEGORY_COLOR  = {
   main:    { bg:"rgba(251,146,60,0.2)",  text:"#fb923c" },
   addon:   { bg:"rgba(74,222,128,0.2)",  text:"#4ade80" },
   bread:   { bg:"rgba(250,204,21,0.2)",  text:"#facc15" },
@@ -91,26 +91,36 @@ function ScoreBar({ score }) {
   )
 }
 
-function FoodImage({ src, alt, className }) {
-  const [loaded, setLoaded] = useState(false)
-  const [error, setError]   = useState(false)
+// Beautiful gradient food card — no images needed
+function FoodCard({ item, size = "menu" }) {
+  const [g1, g2] = item.grad
+  if (size === "menu") {
+    return (
+      <div className="w-20 h-20 shrink-0 flex items-center justify-center rounded-2xl relative overflow-hidden"
+        style={{ background:`linear-gradient(135deg,${g1},${g2})` }}>
+        <div className="absolute inset-0 opacity-20"
+          style={{ background:"radial-gradient(circle at 30% 30%, rgba(255,255,255,0.4), transparent)" }} />
+        <span style={{ fontSize:"2rem", filter:"drop-shadow(0 2px 4px rgba(0,0,0,0.3))" }}>{item.emoji}</span>
+      </div>
+    )
+  }
+  if (size === "cart") {
+    return (
+      <div className="w-10 h-10 shrink-0 flex items-center justify-center rounded-xl"
+        style={{ background:`linear-gradient(135deg,${g1},${g2})` }}>
+        <span style={{ fontSize:"1.2rem" }}>{item.emoji}</span>
+      </div>
+    )
+  }
+  // rec card
   return (
-    <div className={`relative overflow-hidden ${className}`}>
-      {!loaded && !error && (
-        <div className="absolute inset-0 animate-pulse" style={{ background:"rgba(255,255,255,0.05)" }} />
-      )}
-      {error ? (
-        <div className="absolute inset-0 flex items-center justify-center text-3xl"
-          style={{ background:"rgba(255,255,255,0.05)" }}>
-          🍽️
-        </div>
-      ) : (
-        <img src={src} alt={alt}
-          className="w-full h-full object-cover transition-all duration-500"
-          style={{ opacity: loaded ? 1 : 0, transform: loaded ? "scale(1)" : "scale(1.05)" }}
-          onLoad={() => setLoaded(true)}
-          onError={() => setError(true)} />
-      )}
+    <div className="w-full h-28 flex items-center justify-center relative overflow-hidden rounded-t-2xl"
+      style={{ background:`linear-gradient(135deg,${g1},${g2})` }}>
+      <div className="absolute inset-0 opacity-20"
+        style={{ background:"radial-gradient(circle at 30% 30%, rgba(255,255,255,0.5), transparent)" }} />
+      <div className="absolute bottom-0 left-0 right-0 h-8"
+        style={{ background:"linear-gradient(to top, rgba(0,0,0,0.3), transparent)" }} />
+      <span style={{ fontSize:"3.5rem", filter:"drop-shadow(0 4px 8px rgba(0,0,0,0.4))" }}>{item.emoji}</span>
     </div>
   )
 }
@@ -132,7 +142,6 @@ export default function App() {
   const [offered, setOffered]         = useState(0)
   const [newRecIds, setNewRecIds]     = useState([])
   const [toast, setToast]             = useState(null)
-  const searchRef = useRef(null)
 
   const cartTotal   = cart.reduce((s,i) => s + i.price, 0)
   const savings     = Math.round(cartTotal * 0.08)
@@ -143,8 +152,6 @@ export default function App() {
 
   const restaurantItemIds = RESTAURANT_ITEMS[restaurant] || []
   const menuItems = ALL_ITEMS.filter(i => restaurantItemIds.includes(i.item_id))
-
-  // Combined search + category filter
   const filteredMenu = menuItems.filter(i => {
     const matchCat    = filterCat === "all" || i.category === filterCat
     const matchSearch = i.name.toLowerCase().includes(search.toLowerCase()) ||
@@ -161,7 +168,7 @@ export default function App() {
     setTimeout(() => setToast(null), 2000)
   }
 
-  const fetchRecs = async (currentCart, _rest = restaurant, meal = mealTime) => {
+  const fetchRecs = async (currentCart, meal = mealTime) => {
     if (currentCart.length === 0) { setRecs([]); return }
     setLoading(true)
     try {
@@ -184,7 +191,8 @@ export default function App() {
   const addToCart = async (item, fromRec = false) => {
     if (cart.find(c => c.item_id === item.item_id)) return
     if (fromRec) setAccepted(a => a + 1)
-    const newCart = [...cart, item]
+    const fullItem = ALL_ITEMS.find(i => i.item_id === item.item_id) || item
+    const newCart  = [...cart, fullItem]
     setCart(newCart)
     showToast(`${item.name} added!`)
     await fetchRecs(newCart)
@@ -206,7 +214,7 @@ export default function App() {
 
   const handleMealTimeChange = (m) => {
     setMealTime(m)
-    fetchRecs(cart, restaurant, m)
+    fetchRecs(cart, m)
   }
 
   const loadMetrics = async () => {
@@ -306,23 +314,14 @@ export default function App() {
             </div>
           </div>
 
-          {/* Search Bar */}
+          {/* Search */}
           <div className="relative mb-3">
             <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm"
               style={{ color:"rgba(255,255,255,0.35)" }}>🔍</span>
-            <input
-              ref={searchRef}
-              type="text"
-              value={search}
-              onChange={e => setSearch(e.target.value)}
+            <input type="text" value={search} onChange={e => setSearch(e.target.value)}
               placeholder="Search food or category..."
               className="w-full pl-9 pr-4 py-2.5 rounded-xl text-sm outline-none border-0"
-              style={{
-                background:"rgba(255,255,255,0.08)",
-                color:"#fff",
-                border:"1px solid rgba(255,255,255,0.1)",
-              }}
-            />
+              style={{ background:"rgba(255,255,255,0.08)", color:"#fff", border:"1px solid rgba(255,255,255,0.1)" }} />
             {search && (
               <button onClick={() => setSearch("")}
                 className="absolute right-3 top-1/2 -translate-y-1/2 text-xs"
@@ -330,7 +329,7 @@ export default function App() {
             )}
           </div>
 
-          {/* Category Filter Tabs */}
+          {/* Category Tabs */}
           <div className="flex gap-2 mb-4 overflow-x-auto pb-1" style={{ scrollbarWidth:"none" }}>
             {CATEGORIES.map(cat => (
               <button key={cat} onClick={() => setFilterCat(cat)}
@@ -344,32 +343,26 @@ export default function App() {
             ))}
           </div>
 
-          {/* Menu Items — image cards with horizontal scroll per category */}
+          {/* Menu Items */}
           <div className="max-h-[65vh] overflow-y-auto space-y-2 pr-1" style={{ scrollbarWidth:"none" }}>
             {filteredMenu.length === 0 ? (
               <div className="rounded-2xl p-8 text-center"
                 style={{ background:"rgba(255,255,255,0.03)", border:"1px dashed rgba(255,255,255,0.1)" }}>
                 <div className="text-3xl mb-2">🔍</div>
                 <div className="text-sm" style={{ color:"rgba(255,255,255,0.3)" }}>No items found</div>
-                <div className="text-xs mt-1" style={{ color:"rgba(255,255,255,0.2)" }}>
-                  Try a different search or category
-                </div>
               </div>
             ) : filteredMenu.map(item => {
               const inCart = !!cart.find(c => c.item_id === item.item_id)
               const cc     = CATEGORY_COLOR[item.category]
               return (
                 <div key={item.item_id}
-                  className="rounded-2xl overflow-hidden flex transition-all hover:scale-[1.01]"
+                  className="rounded-2xl overflow-hidden flex items-center transition-all hover:scale-[1.01]"
                   style={{
                     background: inCart ? "rgba(226,55,68,0.12)" : "rgba(255,255,255,0.05)",
                     border: inCart ? "1px solid rgba(226,55,68,0.35)" : "1px solid rgba(255,255,255,0.08)",
                     height:"80px"
                   }}>
-                  {/* Food Image */}
-                  <FoodImage src={item.img} alt={item.name} className="w-20 shrink-0" />
-
-                  {/* Info */}
+                  <FoodCard item={item} size="menu" />
                   <div className="flex items-center justify-between flex-1 px-3">
                     <div>
                       <div className="text-white font-semibold text-sm">{item.name}</div>
@@ -384,8 +377,7 @@ export default function App() {
                       className="text-xs font-bold px-3 py-1.5 rounded-xl transition-all hover:scale-105 shrink-0"
                       style={{
                         background: inCart ? "rgba(255,255,255,0.1)" : "linear-gradient(90deg,#e23744,#ff6b6b)",
-                        color:"#fff",
-                        opacity: inCart ? 0.6 : 1
+                        color:"#fff", opacity: inCart ? 0.6 : 1
                       }}>
                       {inCart ? "✓" : "Add"}
                     </button>
@@ -416,16 +408,14 @@ export default function App() {
             )}
           </div>
 
-          {/* Meal Completion Progress */}
+          {/* Meal Completion */}
           {cart.length > 0 && (
             <div className="rounded-2xl p-4 mb-4"
               style={{ background:"rgba(255,255,255,0.05)", border:"1px solid rgba(255,255,255,0.08)" }}>
               <div className="flex items-center justify-between mb-2">
                 <span className="text-xs font-bold text-white">Meal Completion</span>
                 <span className="text-xs font-bold"
-                  style={{ color:progressPct === 100 ? "#4ade80" : "#e23744" }}>
-                  {progressPct}%
-                </span>
+                  style={{ color:progressPct === 100 ? "#4ade80" : "#e23744" }}>{progressPct}%</span>
               </div>
               <div className="w-full h-2 rounded-full overflow-hidden" style={{ background:"rgba(255,255,255,0.1)" }}>
                 <div className="h-full rounded-full transition-all duration-700"
@@ -456,62 +446,49 @@ export default function App() {
               style={{ background:"rgba(255,255,255,0.03)", border:"1px dashed rgba(255,255,255,0.1)" }}>
               <div className="text-4xl mb-2">🛒</div>
               <div className="text-sm" style={{ color:"rgba(255,255,255,0.3)" }}>Your cart is empty</div>
-              <div className="text-xs mt-1" style={{ color:"rgba(255,255,255,0.2)" }}>
-                Add items to get AI recommendations
-              </div>
+              <div className="text-xs mt-1" style={{ color:"rgba(255,255,255,0.2)" }}>Add items to get AI recommendations</div>
             </div>
           ) : (
-            <div className="rounded-2xl overflow-hidden"
-              style={{ border:"1px solid rgba(255,255,255,0.08)" }}>
+            <div className="rounded-2xl overflow-hidden" style={{ border:"1px solid rgba(255,255,255,0.08)" }}>
               {cart.map((item, idx) => (
-                <div key={item.item_id}
-                  className="flex items-center gap-3 px-3 py-2"
+                <div key={item.item_id} className="flex items-center gap-3 px-3 py-2"
                   style={{
                     background: idx % 2 === 0 ? "rgba(255,255,255,0.04)" : "rgba(255,255,255,0.02)",
                     borderBottom:"1px solid rgba(255,255,255,0.05)"
                   }}>
-                  <FoodImage src={item.img} alt={item.name} className="w-10 h-10 rounded-xl shrink-0" />
+                  <FoodCard item={item} size="cart" />
                   <div className="flex-1 min-w-0">
                     <div className="text-white text-sm font-medium truncate">{item.name}</div>
                     <div className="text-xs" style={{ color:"rgba(255,255,255,0.4)" }}>₹{item.price}</div>
                   </div>
                   <button onClick={() => removeFromCart(item.item_id)}
                     className="w-6 h-6 rounded-full flex items-center justify-center shrink-0 transition-all hover:scale-110"
-                    style={{ background:"rgba(226,55,68,0.2)", color:"#ff6b6b" }}>
-                    ×
-                  </button>
+                    style={{ background:"rgba(226,55,68,0.2)", color:"#ff6b6b" }}>×</button>
                 </div>
               ))}
               <div className="px-4 py-3" style={{ background:"rgba(255,255,255,0.06)" }}>
                 <div className="flex justify-between items-center">
                   <span className="text-white font-bold">Total</span>
-                  <span className="text-white font-bold text-lg">
-                    ₹<AnimatedNumber value={cartTotal} />
-                  </span>
+                  <span className="text-white font-bold text-lg">₹<AnimatedNumber value={cartTotal} /></span>
                 </div>
-                <div className="text-xs mt-1" style={{ color:"#4ade80" }}>
-                  🏷️ You save ₹{savings} with combo
-                </div>
+                <div className="text-xs mt-1" style={{ color:"#4ade80" }}>🏷️ You save ₹{savings} with combo</div>
               </div>
             </div>
           )}
 
-          {/* Live Acceptance Rate */}
+          {/* Acceptance Rate */}
           {offered > 0 && (
             <div className="mt-4 rounded-2xl p-4"
               style={{ background:"rgba(255,255,255,0.05)", border:"1px solid rgba(255,255,255,0.08)" }}>
               <div className="text-xs font-bold text-white mb-2">Live Acceptance Rate</div>
               <div className="flex items-end gap-2">
                 <span className="text-3xl font-black"
-                  style={{ color: acceptRate > 50 ? "#4ade80" : "#e23744" }}>
-                  {acceptRate}%
-                </span>
+                  style={{ color: acceptRate > 50 ? "#4ade80" : "#e23744" }}>{acceptRate}%</span>
                 <span className="text-xs mb-1" style={{ color:"rgba(255,255,255,0.4)" }}>
                   {accepted}/{offered} accepted
                 </span>
               </div>
-              <div className="w-full h-2 rounded-full mt-2 overflow-hidden"
-                style={{ background:"rgba(255,255,255,0.1)" }}>
+              <div className="w-full h-2 rounded-full mt-2 overflow-hidden" style={{ background:"rgba(255,255,255,0.1)" }}>
                 <div className="h-full rounded-full transition-all duration-700"
                   style={{ width:`${acceptRate}%`, background:"linear-gradient(90deg,#e23744,#4ade80)" }} />
               </div>
@@ -561,7 +538,7 @@ export default function App() {
                 const inCart  = !!cart.find(c => c.item_id === rec.item_id)
                 const isNew   = newRecIds.includes(rec.item_id)
                 const pct     = Math.round(rec.score * 100)
-                const recItem = ALL_ITEMS.find(i => i.item_id === rec.item_id)
+                const recItem = ALL_ITEMS.find(i => i.item_id === rec.item_id) || rec
                 const cc      = CATEGORY_COLOR[rec.category] || { bg:"rgba(255,255,255,0.1)", text:"#fff" }
                 return (
                   <div key={rec.item_id}
@@ -570,33 +547,22 @@ export default function App() {
                       background: inCart ? "rgba(74,222,128,0.08)" : "rgba(255,255,255,0.05)",
                       border: inCart
                         ? "1px solid rgba(74,222,128,0.3)"
-                        : isNew
-                        ? "1px solid rgba(226,55,68,0.4)"
+                        : isNew ? "1px solid rgba(226,55,68,0.4)"
                         : "1px solid rgba(255,255,255,0.08)",
                       transitionDelay:`${idx * 40}ms`
                     }}>
-                    {/* Food Image */}
+                    {/* Gradient food card */}
                     <div className="relative">
-                      <FoodImage
-                        src={recItem?.img}
-                        alt={rec.name}
-                        className="w-full h-28"
-                      />
-                      {/* Score badge */}
+                      <FoodCard item={recItem} size="rec" />
                       <div className="absolute top-2 right-2 px-2 py-0.5 rounded-full text-xs font-black"
-                        style={{
-                          background:"rgba(0,0,0,0.7)",
-                          color: pct > 60 ? "#4ade80" : pct > 30 ? "#fbbf24" : "#f87171"
-                        }}>
+                        style={{ background:"rgba(0,0,0,0.6)", color: pct > 60 ? "#4ade80" : pct > 30 ? "#fbbf24" : "#f87171" }}>
                         {pct}%
                       </div>
-                      {/* Rank badge */}
                       <div className="absolute top-2 left-2 w-6 h-6 rounded-full flex items-center justify-center text-xs font-black"
                         style={{ background:"rgba(226,55,68,0.9)", color:"#fff" }}>
                         {idx + 1}
                       </div>
                     </div>
-
                     {/* Info */}
                     <div className="p-3">
                       <div className="text-white font-semibold text-sm mb-1 truncate">{rec.name}</div>
@@ -606,7 +572,8 @@ export default function App() {
                           style={{ background:cc.bg, color:cc.text }}>{rec.category}</span>
                       </div>
                       <ScoreBar score={rec.score} />
-                      <button onClick={() => addToCart({ ...rec, img: recItem?.img, veg: recItem?.veg }, true)}
+                      <button
+                        onClick={() => addToCart(recItem, true)}
                         disabled={inCart}
                         className="mt-2 w-full text-xs font-bold py-1.5 rounded-xl transition-all hover:scale-105 disabled:opacity-50"
                         style={{

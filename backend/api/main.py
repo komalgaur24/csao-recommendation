@@ -156,3 +156,16 @@ def get_metrics():
         "model_auc":       0.8579,
         "precision_at_8":  0.5000,
     }
+
+@app.on_event("startup")
+async def warmup():
+    dummy = pd.DataFrame([{
+        "cart_size": 1, "cart_value": 200, "meal_time_enc": 2,
+        "segment_enc": 1, "addon_cat_enc": 0, "addon_price": 50,
+        "addon_popularity": 0.8, "price_ratio": 0.1,
+        "pop_time_inter": 1.6, "cart_has_drink": 0,
+        "cart_has_dessert": 0, "cart_has_bread": 0,
+        "order_freq": 2.0, "avg_order_val": 300
+    }])[FEATURES]
+    MODEL.predict_proba(dummy)
+    print("Model warmed up ✅")
